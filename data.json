@@ -1,0 +1,20 @@
+{
+  "profile": {
+    "name": "Jordan Lee Bagiw",
+    "handle": "bagiwjordan-olsen",
+    "github": "https://github.com/bagiwjordan-olsen",
+    "email": "diedericholsen49@gmail.com",
+    "aboutWho": "2nd-year BSIT student at King's College of the Philippines who likes to build small games in the browser.",
+    "aboutLikes": "Canvas games, matching puzzles, typing tests, and clean vanilla JavaScript."
+  },
+  "apps": [
+    { "id": "snake", "num": "01", "icon": "🐍", "title": "Snake", "desc": "Classic snake with adjustable speed, grid size and wrap-around walls.", "path": "./snake/index.html", "tags": ["Canvas", "Arcade"] },
+    { "id": "2048", "num": "02", "icon": "🔢", "title": "2048", "desc": "Merge tiles to reach 2048. Change the grid size in settings.", "path": "./2048/index.html", "tags": ["Puzzle", "Grid"] },
+    { "id": "memory", "num": "03", "icon": "🃏", "title": "Memory Match", "desc": "Flip cards and find matching pairs. 4x4 and 6x6 modes.", "path": "./memory/index.html", "tags": ["Memory", "Cards"] },
+    { "id": "typing", "num": "04", "icon": "⌨", "title": "Typing Speed Test", "desc": "Measure your WPM in 15, 30 or 60 seconds across different texts.", "path": "./typing/index.html", "tags": ["Test", "WPM"] },
+    { "id": "tictactoe", "num": "05", "icon": "⭕", "title": "Tic Tac Toe vs AI", "desc": "Play against an AI with easy, medium and impossible difficulty.", "path": "./tictactoe/index.html", "tags": ["AI", "Board"] },
+    { "id": "simon", "num": "06", "icon": "🎵", "title": "Simon Says", "desc": "Repeat the color sequence. Speed and length settings included.", "path": "./simon/index.html", "tags": ["Memory", "Audio"] },
+    { "id": "whack", "num": "07", "icon": "🔨", "title": "Whack-a-Mole", "desc": "Tap the moles before time runs out. Three difficulty levels.", "path": "./whack/index.html", "tags": ["Reaction", "Arcade"] },
+    { "id": "rps", "num": "08", "icon": "✊", "title": "Rock Paper Scissors", "desc": "First to win the best-of-N rounds takes the match.", "path": "./rps/index.html", "tags": ["Classic", "Chance"] }
+  ]
+}
