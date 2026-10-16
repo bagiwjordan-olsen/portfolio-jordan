@@ -1,0 +1,6 @@
+{
+  "defaultDifficulty": "normal",
+  "defaultTime": 30,
+  "intervalMs": { "easy": 900, "normal": 650, "hard": 420 },
+  "lifetimeMs": { "easy": 1300, "normal": 950, "hard": 650 }
+}
