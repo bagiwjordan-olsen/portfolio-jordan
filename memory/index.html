@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Match · Jordan Lee Bagiw</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <a class="back" href="../index.html">← Back</a>
+  <header class="hud">
+    <div class="hud-item"><span>Moves</span><b id="moves">0</b></div>
+    <div class="hud-item"><span>Time</span><b id="time">0s</b></div>
+    <div class="hud-item"><span>Best</span><b id="best">—</b></div>
+    <button class="icon-btn" id="settingsBtn">⚙</button>
+  </header>
+
+  <div class="board" id="board"></div>
+
+  <div class="overlay" id="overlay" hidden>
+    <div class="ov-card">
+      <h2 id="ovTitle">You win!</h2>
+      <p id="ovText"></p>
+      <button class="btn" id="ovBtn">Play Again</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="settings" hidden>
+  <div class="modal-card">
+    <header><h3>Settings</h3><button id="closeSettings">×</button></header>
+    <label>Grid size
+      <select id="setSize">
+        <option value="4" selected>4 × 4 (easy)</option>
+        <option value="6">6 × 6 (hard)</option>
+      </select>
+    </label>
+    <label>Theme
+      <select id="setTheme">
+        <option value="emoji" selected>Emoji</option>
+        <option value="letters">Letters</option>
+      </select>
+    </label>
+    <button class="btn" id="saveSettings">Save &amp; Restart</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
