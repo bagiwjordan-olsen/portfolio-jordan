@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2048 · Jordan Lee Bagiw</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <a class="back" href="../index.html">← Back</a>
+  <header class="hud">
+    <div class="hud-item"><span>Score</span><b id="score">0</b></div>
+    <div class="hud-item"><span>Best</span><b id="best">0</b></div>
+    <button class="icon-btn" id="settingsBtn" aria-label="Settings">⚙</button>
+  </header>
+
+  <div class="board-wrap">
+    <div id="board" class="board"></div>
+    <div class="overlay" id="overlay">
+      <h2 id="ovTitle">Join the tiles</h2>
+      <p id="ovText">Reach the 2048 tile!</p>
+      <button class="btn" id="ovBtn">New Game</button>
+    </div>
+  </div>
+
+  <p class="hint">Use arrow keys / WASD / swipe</p>
+</div>
+
+<div class="modal" id="settings" hidden>
+  <div class="modal-card">
+    <header><h3>Settings</h3><button id="closeSettings">×</button></header>
+    <label>Grid size
+      <select id="setSize">
+        <option value="4" selected>4 × 4 (classic)</option>
+        <option value="5">5 × 5</option>
+      </select>
+    </label>
+    <label>Win at
+      <select id="setWin">
+        <option value="1024">1024</option>
+        <option value="2048" selected>2048</option>
+        <option value="4096">4096</option>
+      </select>
+    </label>
+    <button class="btn" id="saveSettings">Save &amp; Restart</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
