@@ -1,0 +1,5 @@
+{
+  "defaultSpeed": "normal",
+  "defaultSound": "on",
+  "speeds": { "slow": 900, "normal": 620, "fast": 400 }
+}
