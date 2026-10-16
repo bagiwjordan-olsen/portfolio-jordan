@@ -1,0 +1,5 @@
+{
+  "defaultTime": 30,
+  "defaultCategory": "quotes",
+  "categories": ["quotes", "code", "words"]
+}
