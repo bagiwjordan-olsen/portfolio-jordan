@@ -1,0 +1,5 @@
+{
+  "defaultBestOf": 3,
+  "defaultStyle": "random",
+  "styles": ["random", "streak"]
+}

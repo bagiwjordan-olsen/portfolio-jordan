@@ -1,0 +1,41 @@
+:root{
+  --bg:#12091c;--surface:#1c1128;--surface-2:#221533;--line:#2e1e42;
+  --text:#f2e8dc;--muted:#9d8ba8;--peach:#e8a87c;--rose:#c17b9c;--sage:#7fb8a4;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;background:radial-gradient(700px 400px at 90% -10%,rgba(232,168,124,.08),transparent 60%),var(--bg);color:var(--text);min-height:100vh;padding:20px}
+.shell{max-width:480px;margin:0 auto}
+.back{display:inline-block;color:var(--muted);font-size:.85rem;margin-bottom:14px}
+.back:hover{color:var(--peach)}
+.hud{display:flex;gap:10px;align-items:center;margin-bottom:16px;background:linear-gradient(160deg,var(--surface-2),var(--surface));border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.hud-item{display:flex;flex-direction:column;flex:1;text-align:center}
+.hud-item span{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.hud-item b{font-family:Consolas,monospace;font-size:1.1rem;color:var(--peach)}
+.icon-btn{width:34px;height:34px;border-radius:9px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--muted);font-size:1rem;cursor:pointer}
+.icon-btn:hover{border-color:var(--peach);color:var(--peach)}
+.arena{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:24px;background:linear-gradient(160deg,var(--surface-2),var(--surface));border:1px solid var(--line);border-radius:16px;margin-bottom:14px}
+.fighter{flex:1;aspect-ratio:1/1;display:grid;place-items:center;font-size:clamp(2rem,10vw,3.2rem);background:#0e0716;border:1px solid var(--line);border-radius:16px;transition:transform .3s var(--ease)}
+.fighter.cpu{background:linear-gradient(160deg,rgba(193,123,156,.14),rgba(193,123,156,.04));border-color:rgba(193,123,156,.4)}
+.fighter.pop{animation:pop .4s var(--ease)}
+@keyframes pop{0%{transform:scale(.7) rotate(-8deg)}50%{transform:scale(1.12) rotate(4deg)}100%{transform:scale(1)}}
+.vs{font-family:Consolas,monospace;color:var(--muted);font-size:.85rem;font-weight:700}
+.status{text-align:center;font-size:.95rem;color:var(--soft);padding:.85rem;background:linear-gradient(160deg,var(--surface-2),var(--surface));border:1px solid var(--line);border-radius:12px;margin-bottom:16px;transition:all .3s var(--ease)}
+.status.win{border-color:rgba(127,184,164,.5);color:var(--sage)}
+.status.lose{border-color:rgba(193,123,156,.5);color:var(--rose)}
+.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}
+.choice{display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:16px 6px;background:linear-gradient(160deg,var(--surface-2),var(--surface));border:1px solid var(--line);border-radius:14px;color:var(--text);font-size:1.6rem;cursor:pointer;transition:all .25s var(--ease);font-family:inherit}
+.choice span{font-size:.74rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.choice:hover{border-color:var(--peach);transform:translateY(-4px);box-shadow:0 12px 28px rgba(232,168,124,.18)}
+.choice:disabled{opacity:.4;cursor:not-allowed;transform:none}
+.reset{width:100%}
+.btn{padding:.7rem 1.4rem;border-radius:10px;border:0;background:linear-gradient(135deg,var(--peach),#d18a5c);color:#2a1420;font-weight:650;font-size:.9rem;cursor:pointer}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(232,168,124,.3)}
+.modal{position:fixed;inset:0;display:grid;place-items:center;padding:20px;background:rgba(10,5,18,.7);backdrop-filter:blur(6px);z-index:100}
+.modal-card{width:100%;max-width:380px;background:linear-gradient(160deg,var(--surface-2),var(--surface));border:1px solid var(--line);border-radius:16px;padding:22px}
+.modal-card header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.modal-card h3{font-size:1.05rem;color:var(--peach)}
+.modal-card header button{width:32px;height:32px;border:0;background:rgba(255,255,255,.04);color:var(--muted);font-size:1.3rem;border-radius:8px;cursor:pointer}
+.modal-card label{display:block;font-size:.85rem;color:var(--soft);margin-bottom:14px}
+.modal-card select{width:100%;margin-top:6px;padding:.5rem .7rem;border-radius:9px;background:#0e0716;border:1px solid var(--line);color:var(--text);font-family:inherit;font-size:.88rem}
+.modal-card .btn{width:100%}
