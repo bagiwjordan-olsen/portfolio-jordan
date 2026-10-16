@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simon Says · Jordan Lee Bagiw</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <a class="back" href="../index.html">← Back</a>
+  <header class="hud">
+    <div class="hud-item"><span>Round</span><b id="round">0</b></div>
+    <div class="hud-item"><span>Best</span><b id="best">0</b></div>
+    <button class="icon-btn" id="settingsBtn">⚙</button>
+  </header>
+
+  <div class="status" id="status">Press Start to begin</div>
+
+  <div class="pad">
+    <button class="btn-pad green" data-c="0"></button>
+    <button class="btn-pad rose"  data-c="1"></button>
+    <button class="btn-pad peach" data-c="2"></button>
+    <button class="btn-pad sage"  data-c="3"></button>
+  </div>
+
+  <button class="btn main" id="startBtn">Start</button>
+</div>
+
+<div class="modal" id="settings" hidden>
+  <div class="modal-card">
+    <header><h3>Settings</h3><button id="closeSettings">×</button></header>
+    <label>Speed
+      <select id="setSpeed">
+        <option value="slow">Slow</option>
+        <option value="normal" selected>Normal</option>
+        <option value="fast">Fast</option>
+      </select>
+    </label>
+    <label>Sound
+      <select id="setSound">
+        <option value="on" selected>On</option>
+        <option value="off">Off</option>
+      </select>
+    </label>
+    <button class="btn" id="saveSettings">Save</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
