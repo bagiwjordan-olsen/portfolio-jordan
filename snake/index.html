@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snake · Jordan Lee Bagiw</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <a class="back" href="../index.html">← Back</a>
+  <header class="hud">
+    <div class="hud-item"><span>Score</span><b id="score">0</b></div>
+    <div class="hud-item"><span>Best</span><b id="best">0</b></div>
+    <button class="icon-btn" id="settingsBtn" aria-label="Settings">⚙</button>
+  </header>
+
+  <div class="stage">
+    <canvas id="game" width="480" height="480"></canvas>
+    <div class="overlay" id="overlay">
+      <h2 id="ovTitle">Ready?</h2>
+      <p id="ovText">Use arrow keys or swipe to move.</p>
+      <button class="btn" id="ovBtn">Start</button>
+    </div>
+  </div>
+
+  <div class="dpad">
+    <button data-dir="up">▲</button>
+    <div><button data-dir="left">◀</button><button data-dir="down">▼</button><button data-dir="right">▶</button></div>
+  </div>
+</div>
+
+<div class="modal" id="settings" hidden>
+  <div class="modal-card">
+    <header><h3>Settings</h3><button id="closeSettings" aria-label="Close">×</button></header>
+    <label>Speed
+      <select id="setSpeed">
+        <option value="slow">Slow</option>
+        <option value="normal" selected>Normal</option>
+        <option value="fast">Fast</option>
+      </select>
+    </label>
+    <label>Grid size
+      <select id="setGrid">
+        <option value="15">15 × 15</option>
+        <option value="20" selected>20 × 20</option>
+        <option value="25">25 × 25</option>
+      </select>
+    </label>
+    <label class="check">
+      <input type="checkbox" id="setWrap"> Wrap through walls
+    </label>
+    <button class="btn" id="saveSettings">Save &amp; Restart</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
