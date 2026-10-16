@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whack-a-Mole · Jordan Lee Bagiw</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <a class="back" href="../index.html">← Back</a>
+  <header class="hud">
+    <div class="hud-item"><span>Score</span><b id="score">0</b></div>
+    <div class="hud-item"><span>Time</span><b id="time">30</b></div>
+    <div class="hud-item"><span>Best</span><b id="best">0</b></div>
+    <button class="icon-btn" id="settingsBtn">⚙</button>
+  </header>
+
+  <div class="status" id="status">Tap Start to play</div>
+
+  <div class="field" id="field"></div>
+
+  <button class="btn main" id="startBtn">Start</button>
+</div>
+
+<div class="modal" id="settings" hidden>
+  <div class="modal-card">
+    <header><h3>Settings</h3><button id="closeSettings">×</button></header>
+    <label>Difficulty
+      <select id="setDiff">
+        <option value="easy">Easy</option>
+        <option value="normal" selected>Normal</option>
+        <option value="hard">Hard</option>
+      </select>
+    </label>
+    <label>Duration
+      <select id="setTime">
+        <option value="15">15s</option>
+        <option value="30" selected>30s</option>
+        <option value="60">60s</option>
+      </select>
+    </label>
+    <button class="btn" id="saveSettings">Save</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
