@@ -1,0 +1,6 @@
+{
+  "defaultSpeed": "normal",
+  "defaultGrid": 20,
+  "wrapDefault": false,
+  "speeds": { "slow": 160, "normal": 110, "fast": 70 }
+}
