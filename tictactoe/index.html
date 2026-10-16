@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe · Jordan Lee Bagiw</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <a class="back" href="../index.html">← Back</a>
+  <header class="hud">
+    <div class="hud-item"><span>You</span><b id="sYou">0</b></div>
+    <div class="hud-item"><span>Draws</span><b id="sDraw">0</b></div>
+    <div class="hud-item"><span>AI</span><b id="sAI">0</b></div>
+    <button class="icon-btn" id="settingsBtn">⚙</button>
+  </header>
+
+  <div class="status" id="status">Your turn</div>
+  <div class="board" id="board"></div>
+
+  <button class="btn reset" id="newRound">New Round</button>
+</div>
+
+<div class="modal" id="settings" hidden>
+  <div class="modal-card">
+    <header><h3>Settings</h3><button id="closeSettings">×</button></header>
+    <label>Difficulty
+      <select id="setDiff">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="impossible">Impossible</option>
+      </select>
+    </label>
+    <label>Best of
+      <select id="setBest">
+        <option value="1">1 game</option>
+        <option value="3" selected>3 games</option>
+        <option value="5">5 games</option>
+      </select>
+    </label>
+    <button class="btn" id="saveSettings">Save &amp; Reset</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
