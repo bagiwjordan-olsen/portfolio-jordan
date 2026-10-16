@@ -1,0 +1,5 @@
+{
+  "defaultDifficulty": "medium",
+  "defaultBestOf": 3,
+  "difficulties": ["easy", "medium", "impossible"]
+}
