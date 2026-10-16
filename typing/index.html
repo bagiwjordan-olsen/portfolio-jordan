@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Typing Speed Test · Jordan Lee Bagiw</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <a class="back" href="../index.html">← Back</a>
+  <header class="hud">
+    <div class="hud-item"><span>Time</span><b id="time">30</b></div>
+    <div class="hud-item"><span>WPM</span><b id="wpm">0</b></div>
+    <div class="hud-item"><span>Accuracy</span><b id="acc">100%</b></div>
+    <button class="icon-btn" id="settingsBtn">⚙</button>
+  </header>
+
+  <div class="typing-box">
+    <p id="text" class="text"></p>
+    <textarea id="input" placeholder="Start typing to begin…" spellcheck="false" autocomplete="off"></textarea>
+  </div>
+
+  <div class="overlay" id="overlay" hidden>
+    <div class="ov-card">
+      <h2 id="ovTitle">Time's up!</h2>
+      <p id="ovText"></p>
+      <button class="btn" id="ovBtn">Try Again</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="settings" hidden>
+  <div class="modal-card">
+    <header><h3>Settings</h3><button id="closeSettings">×</button></header>
+    <label>Duration
+      <select id="setTime">
+        <option value="15">15 seconds</option>
+        <option value="30" selected>30 seconds</option>
+        <option value="60">60 seconds</option>
+      </select>
+    </label>
+    <label>Text
+      <select id="setCat">
+        <option value="quotes" selected>Quotes</option>
+        <option value="code">Code snippets</option>
+        <option value="words">Common words</option>
+      </select>
+    </label>
+    <button class="btn" id="saveSettings">Save &amp; Restart</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
